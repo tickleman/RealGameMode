@@ -1,0 +1,12 @@
+name: RealGameMode
+main: fr.crafter.tickleman.realgamemode.RealGameModePlugin
+version: 0.10
+website: http://plugins.crafter.fr/tickleman/RealGameMode/
+author: tickleman
+depend: []
+softdepend: []
+commands:
+  gm:
+    aliases: []
+    description: RealGameMode commands
+    usage: Use /gm help to list available commands
