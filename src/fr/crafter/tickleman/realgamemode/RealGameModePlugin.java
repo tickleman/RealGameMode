@@ -69,7 +69,7 @@ public class RealGameModePlugin extends JavaPlugin
 					);
 					return true;
 				}
-			} else if (sender.isOp() || sender.hasPermission("realgamemode.set")) {
+			} else if (sender.isOp() || sender.hasPermission("realgamemode.set.others")) {
 				// switch another player's "can creative" mode (if i have the permission or if i am op)
 				String playerName = args[0];
 				Player player = getServer().getPlayer(playerName);
