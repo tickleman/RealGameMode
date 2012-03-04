@@ -1,6 +1,6 @@
 name: RealGameMode
 main: fr.crafter.tickleman.realgamemode.RealGameModePlugin
-version: 0.11
+version: 1.00
 website: http://plugins.crafter.fr/tickleman/RealGameMode/
 author: tickleman
 depend: []

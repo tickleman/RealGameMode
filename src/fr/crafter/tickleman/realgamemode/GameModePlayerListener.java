@@ -2,11 +2,12 @@ package fr.crafter.tickleman.realgamemode;
 
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.event.player.PlayerListener;
 
 //########################################################################## GameModePlayerListener
-public class GameModePlayerListener extends PlayerListener
+public class GameModePlayerListener implements Listener
 {
 
 	RealGameModePlugin plugin;
@@ -18,7 +19,7 @@ public class GameModePlayerListener extends PlayerListener
 	}
 
 	//---------------------------------------------------------------------------------- onPlayerJoin
-	@Override
+	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent event)
 	{
 		Player player = event.getPlayer();

@@ -11,8 +11,6 @@ import org.bukkit.GameMode;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.event.Event.Priority;
-import org.bukkit.event.Event.Type;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -115,7 +113,7 @@ public class RealGameModePlugin extends JavaPlugin
 		loadCreativePlayersFile();
 		GameModePlayerListener playerListener = new GameModePlayerListener(this);
 		PluginManager pm = getServer().getPluginManager();
-		pm.registerEvent(Type.PLAYER_JOIN, playerListener, Priority.Normal, this);
+		pm.registerEvents(playerListener, this);
 		System.out.println(
 			"[RealGameMode] version [" + getDescription().getVersion() + "] ("
 			+ getDescription().getAuthors().toString() + ") loaded"
