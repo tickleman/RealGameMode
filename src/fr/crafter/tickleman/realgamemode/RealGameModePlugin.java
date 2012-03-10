@@ -99,10 +99,6 @@ public class RealGameModePlugin extends JavaPlugin
 	@Override
 	public void onDisable()
 	{
-		System.out.println(
-			"[RealGameMode] version [" + getDescription().getVersion() + "] ("
-			+ getDescription().getAuthors().toString() + ") un-loaded"
-		);
 	}
 
 	//-------------------------------------------------------------------------------------- onEnable
@@ -114,10 +110,6 @@ public class RealGameModePlugin extends JavaPlugin
 		GameModePlayerListener playerListener = new GameModePlayerListener(this);
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvents(playerListener, this);
-		System.out.println(
-			"[RealGameMode] version [" + getDescription().getVersion() + "] ("
-			+ getDescription().getAuthors().toString() + ") loaded"
-		);
 	}
 
 	//---------------------------------------------------------------------------------- removePlayer
